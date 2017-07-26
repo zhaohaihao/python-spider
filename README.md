@@ -1,10 +1,17 @@
-# Python crawler about bank sites
+# 关于爬取银行网点信息的爬虫
 
-The crawler focuses on bank outlets<br />
-The main function in the program sets the memory switch<br />
-This allows you to choose whether data needs to be stored or produced in JSON files<br />
-You can enter the code of the corresponding provinces, cities and regions in the main function for individual data crawling<br /><br />
-
-The crawled data is kept in the directory of the current program<br />
-Because data cannot be unified in cleaning, a lot of unusual conditions arise<br />
-So, I just have been crawled two banks only
+这只是初次学习python爬虫的一个过程产物。<br />
+暂时只用了一些简单的基础语法和库函数，没有涉及框架之类的东西。<br />
+<br />
+这里所编写的爬虫主要是针对银行官网的网点信息。
+代码经过部分的抽象<br />
+你可以在controller包下py文件的函数入口中观察到<br />
+程序在<br />
+　　是否需要入库，<br />
+　　是否需要生成对应JSON文件按省份、城市、区县分包，<br />
+　　对单独的省份、城市、区县等单独抓取<br />
+等方面做了处理。<br />
+<br />
+抓取过程中，还有部分异常没有处理，这是有爬取的一些脏数据引起的。<br />
+目前，只有两个银行的数据能正常爬取，<br />
+其余的等后期有时间再做完善。<br />
